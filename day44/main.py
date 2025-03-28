@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 response = requests.get('https://www.empireonline.com/movies/features/best-movies-2/')
-empire_movie =response.text
+empire_movie = response.text
 
 
 soup = BeautifulSoup(empire_movie, 'html.parser')
